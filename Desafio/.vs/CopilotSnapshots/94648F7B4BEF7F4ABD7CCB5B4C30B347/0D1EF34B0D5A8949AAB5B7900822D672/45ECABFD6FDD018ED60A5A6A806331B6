@@ -1,0 +1,189 @@
+﻿namespace Desafio.Forms
+{
+    partial class FormAdicionarTelefone
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            label17 = new Label();
+            button2 = new Button();
+            txtDDD = new TextBox();
+            txtNumCel = new TextBox();
+            label15 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            DGVTelefones = new DataGridView();
+            btnCancelarNovoEnd = new Button();
+            btnSalvarNovoTel = new Button();
+            cbxTiposTelefone = new ComboBox();
+            ((System.ComponentModel.ISupportInitialize)DGVTelefones).BeginInit();
+            SuspendLayout();
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = SystemColors.HotTrack;
+            label17.Location = new Point(284, 21);
+            label17.Name = "label17";
+            label17.Size = new Size(90, 22);
+            label17.TabIndex = 64;
+            label17.Text = "Telefone";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(510, 87);
+            button2.Name = "button2";
+            button2.Size = new Size(57, 23);
+            button2.TabIndex = 63;
+            button2.Text = "Limpar";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // txtDDD
+            // 
+            txtDDD.Font = new Font("Segoe UI", 7F);
+            txtDDD.Location = new Point(70, 82);
+            txtDDD.MaxLength = 3;
+            txtDDD.Name = "txtDDD";
+            txtDDD.Size = new Size(63, 20);
+            txtDDD.TabIndex = 60;
+            // 
+            // txtNumCel
+            // 
+            txtNumCel.Font = new Font("Segoe UI", 7F);
+            txtNumCel.Location = new Point(160, 82);
+            txtNumCel.MaxLength = 9;
+            txtNumCel.Name = "txtNumCel";
+            txtNumCel.Size = new Size(147, 20);
+            txtNumCel.TabIndex = 59;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
+            label15.Location = new Point(160, 59);
+            label15.Name = "label15";
+            label15.Size = new Size(57, 20);
+            label15.TabIndex = 58;
+            label15.Text = "Número";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
+            label14.Location = new Point(337, 59);
+            label14.Name = "label14";
+            label14.Size = new Size(37, 20);
+            label14.TabIndex = 57;
+            label14.Text = "Tipo";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
+            label13.Location = new Point(70, 59);
+            label13.Name = "label13";
+            label13.Size = new Size(36, 20);
+            label13.TabIndex = 56;
+            label13.Text = "DDD";
+            // 
+            // DGVTelefones
+            // 
+            DGVTelefones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVTelefones.Location = new Point(12, 134);
+            DGVTelefones.Name = "DGVTelefones";
+            DGVTelefones.Size = new Size(615, 190);
+            DGVTelefones.TabIndex = 67;
+            // 
+            // btnCancelarNovoEnd
+            // 
+            btnCancelarNovoEnd.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancelarNovoEnd.ForeColor = SystemColors.ControlText;
+            btnCancelarNovoEnd.Location = new Point(337, 364);
+            btnCancelarNovoEnd.Name = "btnCancelarNovoEnd";
+            btnCancelarNovoEnd.Size = new Size(88, 43);
+            btnCancelarNovoEnd.TabIndex = 66;
+            btnCancelarNovoEnd.Text = "Cancelar";
+            btnCancelarNovoEnd.UseVisualStyleBackColor = true;
+            // 
+            // btnSalvarNovoTel
+            // 
+            btnSalvarNovoTel.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSalvarNovoTel.ForeColor = SystemColors.ControlText;
+            btnSalvarNovoTel.Location = new Point(217, 364);
+            btnSalvarNovoTel.Name = "btnSalvarNovoTel";
+            btnSalvarNovoTel.Size = new Size(88, 43);
+            btnSalvarNovoTel.TabIndex = 65;
+            btnSalvarNovoTel.Text = "Salvar";
+            btnSalvarNovoTel.UseVisualStyleBackColor = true;
+            // 
+            // cbxTiposTelefone
+            // 
+            cbxTiposTelefone.FormattingEnabled = true;
+            cbxTiposTelefone.Location = new Point(337, 82);
+            cbxTiposTelefone.Name = "cbxTiposTelefone";
+            cbxTiposTelefone.Size = new Size(145, 23);
+            cbxTiposTelefone.TabIndex = 68;
+            // 
+            // FormAdicionarTelefone
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(644, 424);
+            Controls.Add(cbxTiposTelefone);
+            Controls.Add(DGVTelefones);
+            Controls.Add(btnCancelarNovoEnd);
+            Controls.Add(btnSalvarNovoTel);
+            Controls.Add(label17);
+            Controls.Add(button2);
+            Controls.Add(txtDDD);
+            Controls.Add(txtNumCel);
+            Controls.Add(label15);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Name = "FormAdicionarTelefone";
+            Text = "FormAdicionarTelefone";
+            Load += FormAdicionarTelefone_Load;
+            ((System.ComponentModel.ISupportInitialize)DGVTelefones).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label label17;
+        private Button button2;
+        private TextBox txtDDD;
+        private TextBox txtNumCel;
+        private Label label15;
+        private Label label14;
+        private Label label13;
+        private DataGridView DGVTelefones;
+        private Button btnCancelarNovoEnd;
+        private Button btnSalvarNovoTel;
+        private ComboBox cbxTiposTelefone;
+    }
+}

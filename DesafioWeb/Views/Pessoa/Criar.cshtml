@@ -1,0 +1,158 @@
+﻿@model DesafioWeb.Models.PessoaModel
+
+@{
+    ViewData["Title"] = "Nova Pessoa";
+}
+
+<h2>Nova Pessoa</h2>
+
+@if (ViewBag.Erro != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Erro
+    </div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <strong>Erros do formulário:</strong>
+
+        <ul>
+            @foreach (var erro in ViewData.ModelState.Values
+                .SelectMany(v => v.Errors))
+            {
+                <li>@erro.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form asp-action="Criar" method="post">
+
+    <h4>Dados da Pessoa</h4>
+
+    <div class="mb-3">
+        <label asp-for="Nome" class="form-label">Nome</label>
+        <input asp-for="Nome" class="form-control" />
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CPF" class="form-label">CPF</label>
+        <input asp-for="CPF" class="form-control" />
+        <span asp-validation-for="CPF" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DataNascimento" class="form-label">
+            Data de Nascimento
+        </label>
+
+        <input asp-for="DataNascimento"
+               type="date"
+               class="form-control" />
+
+        <span asp-validation-for="DataNascimento"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <hr />
+
+    <h4>Endereço</h4>
+
+    <div class="mb-3">
+        <label asp-for="Enderecos[0].CEP" class="form-label">
+            CEP
+        </label>
+
+        <input asp-for="Enderecos[0].CEP"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Enderecos[0].Logradouro" class="form-label">
+            Logradouro
+        </label>
+
+        <input asp-for="Enderecos[0].Logradouro"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Enderecos[0].Numero" class="form-label">
+            Número
+        </label>
+
+        <input asp-for="Enderecos[0].Numero"
+               class="form-control" /> 
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Enderecos[0].Complemento" class="form-label">
+            Complemento
+        </label>
+
+        <input asp-for="Enderecos[0].Complemento"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Enderecos[0].Bairro" class="form-label">
+            Bairro
+        </label>
+
+        <input asp-for="Enderecos[0].Bairro"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Enderecos[0].Cidade" class="form-label">
+            Cidade
+        </label>
+
+        <input asp-for="Enderecos[0].Cidade"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Enderecos[0].Estado" class="form-label">
+            Estado
+        </label>
+
+        <input asp-for="Enderecos[0].Estado"
+               class="form-control" />
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="Enderecos[0].IsPrincipal"
+               class="form-check-input" />
+
+        <label asp-for="Enderecos[0].IsPrincipal"
+               class="form-check-label">
+            Endereço principal
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Salvar
+    </button>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

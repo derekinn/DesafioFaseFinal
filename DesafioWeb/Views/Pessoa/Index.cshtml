@@ -1,0 +1,343 @@
+﻿@model List<DesafioWeb.Models.PessoaModel>
+
+@{
+    ViewData["Title"] = "Pessoas";
+}
+
+<div class="text-center">
+    <h1>Cadastro de Pessoas</h1>
+</div>
+
+@if (ViewBag.Erro != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Erro
+    </div>
+}
+
+<div class="mb-4 d-flex align-items-center justify-content-between gap-3">
+
+    <a asp-controller="Pessoa"
+       asp-action="Criar"
+       class="btn btn-primary px-4 fw-bold flex-shrink-0">
+        Nova Pessoa
+    </a>
+
+    <form asp-controller="Pessoa"
+          asp-action="Index"
+          method="get"
+          class="d-flex align-items-center gap-2 flex-grow-1"
+          id="formBusca">
+
+        <span class="fs-5 text-secondary fw-bold ms-auto me-1">
+            Filtrar
+        </span>
+
+        <select name="TipoFiltro"
+                id="TipoFiltro"
+                class="form-select bg-light flex-shrink-0"
+                style="width: 100px;">
+
+            <option value="CPF"
+                    selected="@(Context.Request.Query["TipoFiltro"] == "CPF" || string.IsNullOrEmpty(Context.Request.Query["TipoFiltro"]))">
+                CPF
+            </option>
+
+            <option value="Nome"
+                    selected="@(Context.Request.Query["TipoFiltro"] == "Nome")">
+                Nome
+            </option>
+
+        </select>
+
+        <input type="text"
+               name="TermoBusca"
+               id="TermoBusca"
+               class="form-control flex-grow-1"
+               value="@Context.Request.Query["TermoBusca"]" />
+
+        <button type="submit"
+                class="btn btn-primary px-4 fw-bold flex-shrink-0">
+            Buscar
+        </button>
+
+        <a asp-controller="Pessoa"
+           asp-action="Index"
+           class="btn btn-outline-primary px-4 fw-bold flex-shrink-0">
+            Limpar
+        </a>
+
+    </form>
+
+</div>
+
+<div id="erroBusca"
+     class="alert alert-danger"
+     style="display: none;">
+</div>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Data de Nascimento</th>
+            <th>Email</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var pessoa in Model)
+        {
+            <tr>
+                <td>@pessoa.Nome</td>
+                <td>@pessoa.CPF</td>
+                <td>@pessoa.DataNascimento.ToString("dd/MM/yyyy")</td>
+                <td>@pessoa.Email</td>
+
+                <td>
+                    <button type="button"
+                            class="btn btn-sm btn-warning"
+                            onclick="AbrirDetalhes(@pessoa.Id)">
+                        Detalhes
+                    </button>
+
+                    <a asp-controller="Pessoa"
+                       asp-action="Editar"
+                       asp-route-id="@pessoa.Id"
+                       class="btn btn-sm btn-info">
+                        Editar
+                    </a>
+
+                    <form asp-action="Deletar"
+                          asp-route-id="@pessoa.Id"
+                          method="post"
+                          style="display:inline;">
+
+                        <button type="submit"
+                                class="btn btn-sm btn-danger"
+                                onclick="return confirm('Tem certeza que deseja excluir esta pessoa?');">
+                            Excluir
+                        </button>
+
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<div class="modal fade"
+     id="modalDetalhes"
+     tabindex="-1"
+     aria-labelledby="modalDetalhesLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDetalhesLabel">
+                    Detalhes da Pessoa
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Fechar">
+                </button>
+            </div>
+
+            <div class="modal-body" id="conteudoDetalhes">
+
+                <div class="text-center">
+                    <span>Carregando...</span>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Fechar
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const SelectFiltro = document.getElementById("TipoFiltro");
+        const InputBusca = document.getElementById("TermoBusca");
+        const FormBusca = document.getElementById("formBusca");
+        const ErroBusca = document.getElementById("erroBusca");
+
+        function AtualizarPlaceholder() {
+
+            if (SelectFiltro.value === "CPF") {
+                InputBusca.placeholder = "Escreva o CPF";
+            }
+            else {
+                InputBusca.placeholder = "Escreva o nome";
+            }
+        }
+
+        function MostrarErro(mensagem) {
+
+            ErroBusca.textContent = mensagem;
+            ErroBusca.style.display = "block";
+
+            InputBusca.focus();
+        }
+
+        function LimparErro() {
+
+            ErroBusca.textContent = "";
+            ErroBusca.style.display = "none";
+        }
+
+        AtualizarPlaceholder();
+
+        SelectFiltro.addEventListener("change", function() {
+
+            LimparErro();
+
+            InputBusca.value = "";
+
+            AtualizarPlaceholder();
+
+            InputBusca.focus();
+        });
+
+        FormBusca.addEventListener("submit", function(event) {
+
+            LimparErro();
+
+            const tipo = SelectFiltro.value;
+            const termo = InputBusca.value.trim();
+
+            if (termo === "") {
+
+                event.preventDefault();
+
+                MostrarErro(
+                    "Preencha corretamente para realizar a pesquisa!"
+                );
+
+                return;
+            }
+
+            if (tipo === "CPF") {
+
+                if (termo.split("").some(caractere => isNaN(caractere))) {
+
+                    event.preventDefault();
+
+                    MostrarErro(
+                        "Para pesquisar por CPF, informe somente números!"
+                    );
+
+                    return;
+                }
+
+                if (termo.length !== 11) {
+
+                    event.preventDefault();
+
+                    MostrarErro(
+                        "O CPF deve possuir exatamente 11 dígitos!"
+                    );
+
+                    return;
+                }
+            }
+
+            if (tipo === "Nome") {
+
+                if (termo.split("").some(caractere => !isNaN(caractere))) {
+
+                    event.preventDefault();
+
+                    MostrarErro(
+                        "Para pesquisar por nome, informe somente letras!"
+                    );
+
+                    return;
+                }
+
+                if (termo.length < 2) {
+
+                    event.preventDefault();
+
+                    MostrarErro(
+                        "O nome deve possuir pelo menos 2 caracteres!"
+                    );
+
+                    return;
+                }
+            }
+
+        });
+
+    });
+
+
+    async function AbrirDetalhes(id) {
+
+        const conteudo =
+            document.getElementById("conteudoDetalhes");
+
+        conteudo.innerHTML = `
+                <div class="text-center">
+                    <span>Carregando...</span>
+                </div>
+            `;
+
+        const ModalElement =
+            document.getElementById("modalDetalhes");
+
+        const modal =
+            new bootstrap.Modal(ModalElement);
+
+        modal.show();
+
+        try {
+
+            const response =
+                await fetch(`/Pessoa/Detalhes?id=${id}`);
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Não foi possível carregar os detalhes."
+                );
+            }
+
+            const html =
+                await response.text();
+
+            conteudo.innerHTML = html;
+
+        }
+        catch (error) {
+
+            conteudo.innerHTML = `
+                    <div class="alert alert-danger">
+                        ${error.message}
+                    </div>
+                `;
+        }
+    }
+
+</script>

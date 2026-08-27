@@ -1,0 +1,77 @@
+﻿using Desafio.Models;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Desafio
+{
+    public partial class FormAdicionarEndereco : Form
+    {
+        private readonly List<Endereco> enderecos = new();
+        public FormAdicionarEndereco()
+        {
+            InitializeComponent();
+        }
+        private void btnSalvarNovoEnd_Click(Object sender, EventArgs e)
+        {
+            if (chkPrincipal.Checked)
+            {
+                foreach (var endereco in enderecos)
+                    endereco.IsPrincipal = false;
+            }
+
+            enderecos.Add(new Endereco
+            {
+                Cep = txtCEP.Text,
+                Logradouro = txtLogradouro.Text,
+                Numero = txtNumero.Text,
+                Complemento = txtComplemento.Text,
+                Bairro = txtBairro.Text,
+                Cidade = txtCidade.Text,
+                Estado = txtEstado.Text,
+                IsPrincipal = chkPrincipal.Checked
+            });
+
+            AtualizarGridEnderecos();
+            LimparCamposEndereco();
+        }
+        private void AtualizarGridEnderecos()
+        {
+            DGVEnderecos.DataSource = null;
+            DGVEnderecos.DataSource = enderecos;
+
+            DGVEnderecos.Columns["Id"]!.Visible = false;
+            DGVEnderecos.Columns["PessoaId"]!.Visible = false;
+
+            DGVEnderecos.Columns["Cep"]!.HeaderText = "CEP";
+            DGVEnderecos.Columns["Logradouro"]!.HeaderText = "Rua";
+            DGVEnderecos.Columns["Numero"]!.HeaderText = "Nº";
+            DGVEnderecos.Columns["Complemento"]!.HeaderText = "Complemento";
+            DGVEnderecos.Columns["Bairro"]!.HeaderText = "Bairro";
+            DGVEnderecos.Columns["Cidade"]!.HeaderText = "Cidade";
+            DGVEnderecos.Columns["Estado"]!.HeaderText = "UF";
+            DGVEnderecos.Columns["IsPrincipal"]!.HeaderText = "Principal";
+        }
+
+        private void LimparCamposEndereco()
+        {
+            txtCEP.Clear();
+            txtLogradouro.Clear();
+            txtNumero.Clear();
+            txtComplemento.Clear();
+            txtBairro.Clear();
+            txtCidade.Clear();
+            txtEstado.Clear();
+            chkPrincipal.Checked = false;
+        }
+
+        private void btnCancelarNovoEnd_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

@@ -1,0 +1,66 @@
+﻿@model DesafioWeb.Models.TelefoneModel
+
+@{
+    ViewData["Title"] = "Adicionar Telefone";
+}
+
+<h2>Adicionar Telefone</h2>
+
+@if (ViewBag.Erro != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Erro
+    </div>
+}
+
+<form asp-action="CriarTelefone" method="post">
+
+    <input asp-for="PessoaId" type="hidden" />
+
+    <div class="mb-3">
+        <label asp-for="DDD" class="form-label">
+            DDD
+        </label>
+
+        <input asp-for="DDD"
+               class="form-control"
+               maxlength="3"
+               minlength="2" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Numero" class="form-label">
+            Número
+        </label>
+
+        <input asp-for="Numero"
+               class="form-control"
+               maxlength="9" 
+               minlength="8"/>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Tipo" class="form-label">
+            Tipo
+        </label>
+
+        <select asp-for="Tipo" class="form-select">
+            <option value="">Selecione o tipo</option>
+            <option value="Pessoal">Pessoal</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Whatsapp">Whatsapp</option>
+        </select>
+    </div>
+
+    <button type="submit"
+            class="btn btn-success">
+        Salvar
+    </button>
+
+    <a asp-action="Editar"
+       asp-route-id="@Model.PessoaId"
+       class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>

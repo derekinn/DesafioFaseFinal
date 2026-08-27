@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../API/API.csproj" />
+  <Project Path="../DesafioWeb/DesafioWeb.csproj" Id="ae2eef43-3329-480b-ad87-e14886285065" />
+  <Project Path="Desafio.csproj" />
+</Solution>

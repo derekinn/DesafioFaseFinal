@@ -1,0 +1,63 @@
+﻿@model DesafioWeb.Models.TelefoneModel
+
+@{
+    ViewData["Title"] = "Editar Telefone";
+}
+
+<h2>Editar Telefone</h2>
+
+@if (ViewBag.Erro != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Erro
+    </div>
+}
+
+<form asp-action="EditarTelefone" method="post">
+
+    <input asp-for="Id" type="hidden" />
+    <input asp-for="PessoaId" type="hidden" />
+
+    <div class="mb-3">
+        <label asp-for="DDD" class="form-label">
+            DDD
+        </label>
+
+        <input asp-for="DDD"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Numero" class="form-label">
+            Número
+        </label>
+
+        <input asp-for="Numero"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Tipo" class="form-label">
+            Tipo
+        </label>
+
+        <select asp-for="Tipo" class="form-select">
+            <option value="">Selecione o tipo</option>
+            <option value="Pessoal">Pessoal</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Whatsapp">Whatsapp</option>
+        </select>
+    </div>
+
+    <button type="submit"
+            class="btn btn-success">
+        Salvar Alterações
+    </button>
+
+    <a asp-action="Editar"
+       asp-route-id="@Model.PessoaId"
+       class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>
