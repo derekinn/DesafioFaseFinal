@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\criar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -37,21 +40,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 15,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
-              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
-              "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAAAL8AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-27T17:41:37.019Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -114,7 +104,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Criar.cshtml",
+              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
+              "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
+              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
+              "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-27T17:59:50.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
+              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
+              "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-27T17:41:37.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\Editar.cshtml",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\Editar.cshtml",
@@ -126,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AgendaService.cs",
               "DocumentMoniker": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\API\\Services\\AgendaService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\API\\Services\\AgendaService.cs",
@@ -138,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PessoaRepository.cs",
               "DocumentMoniker": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\API\\Data\\PessoaRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\API\\Data\\PessoaRepository.cs",
@@ -150,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AgendaController.cs",
               "DocumentMoniker": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\API\\Controllers\\AgendaController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\API\\Controllers\\AgendaController.cs",
@@ -162,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "_DetalhesPessoa.cshtml",
               "DocumentMoniker": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\_DetalhesPessoa.cshtml",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\_DetalhesPessoa.cshtml",
@@ -174,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Detalhes.cshtml",
               "DocumentMoniker": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\Detalhes.cshtml",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\Detalhes.cshtml",
@@ -182,12 +198,11 @@
               "RelativeToolTip": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\Detalhes.cshtml",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-26T11:34:50.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-26T11:34:50.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
@@ -199,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PessoaController.cs",
               "DocumentMoniker": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Controllers\\PessoaController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\derick.silva\\source\\repos\\Aulas-POO\\DesafioWeb\\Controllers\\PessoaController.cs",
