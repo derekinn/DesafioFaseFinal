@@ -10,6 +10,10 @@
       {
         "Path": "..\\DesafioWeb\\DesafioWeb.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "Desafio.csproj",
+        "Action": "Start"
       }
     ]
   }
