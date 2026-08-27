@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YfOKPYufANQ=",
+  "dgSpecHash": "d5L9aOF16/c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\API\\API.csproj",
+  "projectFilePath": "C:\\DevEnv\\Cadastro de Pessoas\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\derick.silva\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
     "C:\\Users\\derick.silva\\.nuget\\packages\\microsoft.data.sqlite\\10.0.10\\microsoft.data.sqlite.10.0.10.nupkg.sha512",

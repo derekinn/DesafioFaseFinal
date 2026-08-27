@@ -12,77 +12,77 @@ build_property.EntryPointFilePath =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DesafioWeb
 build_property.RootNamespace = DesafioWeb
-build_property.ProjectDir = C:\Users\derick.silva\source\repos\Aulas-POO\DesafioWeb\
+build_property.ProjectDir = C:\DevEnv\Cadastro de Pessoas\DesafioWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\derick.silva\source\repos\Aulas-POO\DesafioWeb
+build_property.MSBuildProjectDirectory = C:\DevEnv\Cadastro de Pessoas\DesafioWeb
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Home/Index.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Home/Privacy.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/Criar.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENyaWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/CriarEndereco.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/CriarEndereco.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENyaWFyRW5kZXJlY28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/CriarTelefone.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/CriarTelefone.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENyaWFyVGVsZWZvbmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/Detalhes.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/Detalhes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXERldGFsaGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/Editar.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/EditarEndereco.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/EditarEndereco.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEVkaXRhckVuZGVyZWNvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/EditarTelefone.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/EditarTelefone.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEVkaXRhclRlbGVmb25lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/Index.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Pessoa/_DetalhesPessoa.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/_DetalhesPessoa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXF9EZXRhbGhlc1Blc3NvYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Shared/Error.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/_ViewImports.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/_ViewStart.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/derick.silva/source/repos/Aulas-POO/DesafioWeb/Views/Shared/_Layout.cshtml]
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3uij2zgspv
