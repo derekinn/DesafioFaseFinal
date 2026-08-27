@@ -448,11 +448,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\Desafio\\Desafio.csproj",
+      "projectUniqueName": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Desafio.csproj",
       "projectName": "Desafio",
-      "projectPath": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\Desafio\\Desafio.csproj",
+      "projectPath": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Desafio.csproj",
       "packagesPath": "C:\\Users\\derick.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\Desafio\\obj\\",
+      "outputPath": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

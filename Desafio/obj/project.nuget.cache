@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VHWYziUvTKM=",
+  "dgSpecHash": "nLoNAAUtO5o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\derick.silva\\source\\repos\\Aulas-POO\\Desafio\\Desafio.csproj",
+  "projectFilePath": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Desafio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\derick.silva\\.nuget\\packages\\microsoft.data.sqlite\\10.0.10\\microsoft.data.sqlite.10.0.10.nupkg.sha512",
     "C:\\Users\\derick.silva\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.10\\microsoft.data.sqlite.core.10.0.10.nupkg.sha512",
