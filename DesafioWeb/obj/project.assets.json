@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "Desafio.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Desafio.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Desafio.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Desafio.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Desafio.Shared/Desafio.Shared.csproj",
+      "msbuildProject": "../Desafio.Shared/Desafio.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "Desafio.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\derick.silva\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\DevEnv\\Cadastro de Pessoas\\Desafio.Shared\\Desafio.Shared.csproj": {
+              "projectPath": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio.Shared\\Desafio.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

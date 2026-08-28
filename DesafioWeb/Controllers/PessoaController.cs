@@ -67,6 +67,8 @@ namespace DesafioWeb.Controllers
                 IsPrincipal = true
             });
 
+            pessoa.Telefones.Add(new TelefoneModel());
+
             return View(pessoa);
         }
         [HttpPost]

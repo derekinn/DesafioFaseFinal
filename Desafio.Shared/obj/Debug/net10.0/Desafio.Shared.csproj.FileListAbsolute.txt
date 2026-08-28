@@ -1,0 +1,12 @@
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\bin\Debug\net10.0\Desafio.Shared.deps.json
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\bin\Debug\net10.0\Desafio.Shared.dll
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\bin\Debug\net10.0\Desafio.Shared.pdb
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.AssemblyInfoInputs.cache
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.AssemblyInfo.cs
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.csproj.CoreCompileInputs.cache
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.sourcelink.json
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.dll
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\refint\Desafio.Shared.dll
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.pdb
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\ref\Desafio.Shared.dll

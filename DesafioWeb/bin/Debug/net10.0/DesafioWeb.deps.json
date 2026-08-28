@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "DesafioWeb/1.0.0": {
+        "dependencies": {
+          "Desafio.Shared": "1.0.0"
+        },
         "runtime": {
           "DesafioWeb.dll": {}
+        }
+      },
+      "Desafio.Shared/1.0.0": {
+        "runtime": {
+          "Desafio.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "DesafioWeb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Desafio.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

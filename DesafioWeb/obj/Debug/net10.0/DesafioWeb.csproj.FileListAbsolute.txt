@@ -195,3 +195,7 @@ C:\DevEnv\Cadastro de Pessoas\DesafioWeb\obj\Debug\net10.0\refint\DesafioWeb.dll
 C:\DevEnv\Cadastro de Pessoas\DesafioWeb\obj\Debug\net10.0\DesafioWeb.pdb
 C:\DevEnv\Cadastro de Pessoas\DesafioWeb\obj\Debug\net10.0\DesafioWeb.genruntimeconfig.cache
 C:\DevEnv\Cadastro de Pessoas\DesafioWeb\obj\Debug\net10.0\ref\DesafioWeb.dll
+C:\DevEnv\Cadastro de Pessoas\DesafioWeb\bin\Debug\net10.0\Desafio.Shared.dll
+C:\DevEnv\Cadastro de Pessoas\DesafioWeb\bin\Debug\net10.0\Desafio.Shared.pdb
+C:\DevEnv\Cadastro de Pessoas\DesafioWeb\obj\Debug\net10.0\DesafioWeb.csproj.AssemblyReference.cache
+C:\DevEnv\Cadastro de Pessoas\DesafioWeb\obj\Debug\net10.0\DesafioWeb.csproj.Up2Date

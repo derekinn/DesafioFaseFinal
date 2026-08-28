@@ -1,4 +1,5 @@
 ﻿@model DesafioWeb.Models.EnderecoModel
+@using Desafio.Models
 
 @{
     ViewData["Title"] = "Novo Endereço";
@@ -76,8 +77,20 @@
             Estado
         </label>
 
-        <input asp-for="Estado"
-               class="form-control" />
+        <select asp-for="Estado"
+                class="form-select">
+
+            <option value="">Selecione</option>
+
+            @foreach (var uf in UF.ListaUF)
+            {
+                <option value="@uf.Sigla"> @uf.Sigla - @uf.Nome</option>
+            }
+
+        </select>
+
+        <span asp-validation-for="Estado"
+              class="text-danger"></span>
     </div>
 
     <div class="form-check mb-3">

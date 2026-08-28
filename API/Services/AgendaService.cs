@@ -32,9 +32,18 @@ namespace API.Services
 
                 foreach (var telefone in pessoa.Telefones)
                 {
+                    if (string.IsNullOrWhiteSpace(telefone.DDD) &&
+                        string.IsNullOrWhiteSpace(telefone.Numero) &&
+                        string.IsNullOrWhiteSpace(telefone.Tipo))
+                    {
+                        continue;
+                    }
+
+                    telefone.Validar();
+
                     telefone.PessoaId = id;
                     TelefoneRepository.Inserir(telefone);
-                }
+                } 
 
                 trans.Commit();
                 return id;

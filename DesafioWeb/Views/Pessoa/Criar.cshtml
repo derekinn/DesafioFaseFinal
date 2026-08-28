@@ -1,4 +1,5 @@
 ﻿@model DesafioWeb.Models.PessoaModel
+@using Desafio.Models
 
 @{
     ViewData["Title"] = "Nova Pessoa";
@@ -64,6 +65,51 @@
     </div>
 
     <hr />
+
+    <h4>Telefone</h4>
+
+    <div class="mb-3">
+        <label asp-for="Telefones[0].DDD" class="form-label">
+            DDD
+        </label>
+
+        <input asp-for="Telefones[0].DDD"
+                class="form-control"/>
+
+        <span asp-validation-for="Telefones[0].DDD"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Telefones[0].Numero" class="form-label">
+            Número
+        </label>
+
+        <input asp-for="Telefones[0].Numero" 
+            class="form-control"/>
+
+        <span asp-validation-for="Telefones[0].Numero"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Telefones[0].Tipo" class="form-label">
+            Tipo
+        </label>
+        <select asp-for="Telefones[0].Tipo"
+                class="form-select">
+            <option value="">Selecione</option>
+            <option value="Pessoal">Pessoal</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Whatsapp">Whatsapp</option>
+        </select>
+
+        <span asp-validation-for="Telefones[0].Tipo"
+              class="text-danger"></span>
+    </div>
+
+    <hr />
+
     <h4>Endereço</h4>
 
     <div class="mb-3">
@@ -120,14 +166,24 @@
                class="form-control" />
     </div>
 
-    <div class="mb-3">
-        <label asp-for="Enderecos[0].Estado" class="form-label">
-            Estado
-        </label>
+    <label asp-for="Enderecos[0].Estado" class="form-label">
+        Estado
+    </label>
 
-        <input asp-for="Enderecos[0].Estado"
-               class="form-control" />
-    </div>
+    <select asp-for="Enderecos[0].Estado"
+            class="form-select">
+
+        <option value="">Selecione</option>
+
+        @foreach (var uf in UF.ListaUF)
+        {
+            <option value="@uf.Sigla"> @uf.Sigla - @uf.Nome</option>
+        }
+
+    </select>
+
+    <span asp-validation-for="Enderecos[0].Estado"
+          class="text-danger"></span>
 
     <div class="form-check mb-3">
         <input asp-for="Enderecos[0].IsPrincipal"
