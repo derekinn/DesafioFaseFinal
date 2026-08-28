@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="../API/API.csproj" />
+  <Project Path="../Desafio.Shared/Desafio.Shared.csproj" Id="8615589d-f6e9-453b-8035-f2f2eaf78ef8" />
   <Project Path="../DesafioWeb/DesafioWeb.csproj" Id="ae2eef43-3329-480b-ad87-e14886285065" />
   <Project Path="Desafio.csproj" />
 </Solution>
