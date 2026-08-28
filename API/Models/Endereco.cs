@@ -12,6 +12,7 @@
         public string? Cidade { get; set; }
         public string? Estado { get; set; }
         public bool IsPrincipal { get; set; }
+
         public void Validar()
         {
             if (string.IsNullOrWhiteSpace(Cep) || Cep.Length != 8 || !Cep.All(char.IsDigit))
@@ -44,6 +45,5 @@
                 throw new Exception("Estado é obrigatório!");
             }
         }
-
     }
 }

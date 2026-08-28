@@ -24,7 +24,12 @@
         </label>
 
         <input asp-for="CEP"
-               class="form-control" />
+               class="form-control"
+               maxlength="8"
+               inputmode="numeric" />
+
+        <span asp-validation-for="CEP"
+              class="text-danger"></span>
     </div>
 
     <div class="mb-3">

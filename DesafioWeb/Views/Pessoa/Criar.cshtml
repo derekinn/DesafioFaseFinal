@@ -34,14 +34,24 @@
     <h4>Dados da Pessoa</h4> 
 
     <div class="mb-3">
-        <label asp-for="Nome" class="form-label">Nome</label>
-        <input asp-for="Nome" class="form-control" />
-        <span asp-validation-for="Nome" class="text-danger"></span>
+        <label asp-for="Nome" class="form-label">
+            Nome
+        </label>
+
+        <input asp-for="Nome"
+               class="form-control"
+               minlength="2"
+               maxlength="100" />
+
+        <span asp-validation-for="Nome"
+              class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="CPF" class="form-label">CPF</label>
-        <input asp-for="CPF" class="form-control" />
+        <input asp-for="CPF" class="form-control"
+               maxlength="11"
+               inputmode="numeric"/>
         <span asp-validation-for="CPF" class="text-danger"></span>
     </div>
 
@@ -74,7 +84,9 @@
         </label>
 
         <input asp-for="Telefones[0].DDD"
-                class="form-control"/>
+               class="form-control"
+               maxlength="3"
+               inputmode="numeric"/>
 
         <span asp-validation-for="Telefones[0].DDD"
               class="text-danger"></span>
@@ -86,7 +98,9 @@
         </label>
 
         <input asp-for="Telefones[0].Numero" 
-            class="form-control"/>
+               class="form-control"
+               maxlength="9"
+               inputmode="numeric"/>
 
         <span asp-validation-for="Telefones[0].Numero"
               class="text-danger"></span>
@@ -118,7 +132,9 @@
         </label>
 
         <input asp-for="Enderecos[0].CEP"
-               class="form-control" />
+               class="form-control"
+               maxlength="8"
+               inputmode="numeric" />
     </div>
 
     <div class="mb-3">
@@ -211,3 +227,10 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+<script>
+    const campoNome = document.getElementById("Nome");
+
+    campoNome.addEventListener("input", function() {
+        this.value = this.value.replace(/[0-9]/g, "");
+    });
+</script>

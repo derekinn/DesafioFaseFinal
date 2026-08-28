@@ -31,7 +31,17 @@
             {
                 throw new Exception("O nome é obrigatório!");
             }
-            if (string.IsNullOrWhiteSpace(Email) || !Email.Contains("@") || !Email.Contains("mail.com"))
+
+            if (Nome.Trim().Length < 2)
+            {
+                throw new Exception("O nome deve possuir pelo menos 2 caracteres!");
+            }
+
+            if (Nome.Any(char.IsDigit))
+            {
+                throw new Exception("O nome não pode possuir números!");
+            }
+            if (string.IsNullOrWhiteSpace(Email) || !Email.Contains("@") || !Email.Contains("mail."))
             {
                 throw new Exception("O email está invalido!");
             }
