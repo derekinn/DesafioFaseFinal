@@ -9,7 +9,22 @@
       "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\criarendereco.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3B825327-BE3C-E3E9-9DBC-4E1DA6DB1907}|..\\API\\API.csproj|c:\\devenv\\cadastro de pessoas\\api\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\criar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B825327-BE3C-E3E9-9DBC-4E1DA6DB1907}|..\\API\\API.csproj|c:\\devenv\\cadastro de pessoas\\api\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\editartelefone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8615589D-F6E9-453B-8035-F2F2EAF78EF8}|..\\Desafio.Shared\\Desafio.Shared.csproj|c:\\devenv\\cadastro de pessoas\\desafio.shared\\models\\uf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -25,9 +40,6 @@
       "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\models\\enderecomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -38,15 +50,15 @@
       "RelativeMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|solutionrelative:forms\\formadicionarendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|c:\\devenv\\cadastro de pessoas\\desafio\\forms\\formadicionarendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\forms\\formadicionarendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|solutionrelative:forms\\formadicionarendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|c:\\devenv\\cadastro de pessoas\\desafio\\forms\\formadicionartelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\forms\\formadicionartelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|solutionrelative:forms\\formadicionartelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|c:\\devenv\\cadastro de pessoas\\desafio\\forms\\formcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\forms\\formcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C8B6F0FB-8D9C-7650-F363-D505277E1955}|Desafio.csproj|solutionrelative:forms\\formcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -60,84 +72,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 14,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1ce3aef-c78d-49ee-b72b-ec1fbc908313}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{b1ce3aef-c78d-49ee-b72b-ec1fbc908313}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Endereco.cs",
+              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\API\\Models\\Endereco.cs",
+              "RelativeDocumentMoniker": "..\\API\\Models\\Endereco.cs",
+              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\API\\Models\\Endereco.cs",
+              "RelativeToolTip": "..\\API\\Models\\Endereco.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvy0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T19:07:58.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\API\\Models\\Pessoa.cs",
+              "RelativeDocumentMoniker": "..\\API\\Models\\Pessoa.cs",
+              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\API\\Models\\Pessoa.cs",
+              "RelativeToolTip": "..\\API\\Models\\Pessoa.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAADwvzAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T19:03:13.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditarTelefone.cshtml",
+              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\EditarTelefone.cshtml",
+              "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\EditarTelefone.cshtml",
+              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\EditarTelefone.cshtml",
+              "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\EditarTelefone.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAACYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-28T18:35:07.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Editar.cshtml",
+              "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Editar.cshtml",
+              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Editar.cshtml",
+              "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Editar.cshtml",
+              "ViewState": "AgIAAM4AAAAAAAAAAADwv90AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-28T18:32:10.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Criar.cshtml",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
               "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
               "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAAALMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAADwv+IAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-28T17:35:27.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "UF.cs",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio.Shared\\Models\\UF.cs",
               "RelativeDocumentMoniker": "..\\Desafio.Shared\\Models\\UF.cs",
@@ -145,12 +153,11 @@
               "RelativeToolTip": "..\\Desafio.Shared\\Models\\UF.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T17:33:10.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T17:33:10.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio.Shared\\Class1.cs",
               "RelativeDocumentMoniker": "..\\Desafio.Shared\\Class1.cs",
@@ -158,12 +165,11 @@
               "RelativeToolTip": "..\\Desafio.Shared\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T17:32:43.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T17:32:43.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "EnderecoModel.cs",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Models\\EnderecoModel.cs",
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Models\\EnderecoModel.cs",
@@ -171,12 +177,11 @@
               "RelativeToolTip": "..\\DesafioWeb\\Models\\EnderecoModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T16:42:08.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T16:42:08.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "UF.cs",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Models\\UF.cs",
               "RelativeDocumentMoniker": "Models\\UF.cs",
@@ -184,25 +189,24 @@
               "RelativeToolTip": "Models\\UF.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAwwBYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T16:22:35.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T16:22:35.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
               "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
               "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAWwCAAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAWwOMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-28T16:17:32.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Home\\Index.cshtml",
@@ -210,12 +214,11 @@
               "RelativeToolTip": "..\\DesafioWeb\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-28T14:26:54.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T14:26:54.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Shared\\_Layout.cshtml",
@@ -223,8 +226,7 @@
               "RelativeToolTip": "..\\DesafioWeb\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-28T14:25:56.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T14:25:56.091Z"
             },
             {
               "$type": "Document",
@@ -234,7 +236,7 @@
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\CriarEndereco.cshtml",
               "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\CriarEndereco.cshtml",
               "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\CriarEndereco.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFYAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwCAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-28T13:45:55.835Z",
               "EditorCaption": ""
@@ -247,14 +249,14 @@
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\EditarEndereco.cshtml",
               "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\EditarEndereco.cshtml",
               "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\EditarEndereco.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFUAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwCEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-28T13:44:58.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "FormAdicionarEndereco.cs",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Forms\\FormAdicionarEndereco.cs",
               "RelativeDocumentMoniker": "Forms\\FormAdicionarEndereco.cs",
@@ -267,43 +269,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "FormAdicionarTelefone.cs [Design]",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Forms\\FormAdicionarTelefone.cs",
               "RelativeDocumentMoniker": "Forms\\FormAdicionarTelefone.cs",
               "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Forms\\FormAdicionarTelefone.cs [Design]",
               "RelativeToolTip": "Forms\\FormAdicionarTelefone.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:40:32.469Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-28T13:40:32.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "FormAdicionarEndereco.cs [Design]",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Forms\\FormAdicionarEndereco.cs",
               "RelativeDocumentMoniker": "Forms\\FormAdicionarEndereco.cs",
               "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Forms\\FormAdicionarEndereco.cs [Design]",
               "RelativeToolTip": "Forms\\FormAdicionarEndereco.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:40:31.667Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-28T13:40:31.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "FormCadastro.cs [Design]",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Forms\\FormCadastro.cs",
               "RelativeDocumentMoniker": "Forms\\FormCadastro.cs",
               "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\Forms\\FormCadastro.cs [Design]",
               "RelativeToolTip": "Forms\\FormCadastro.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:40:16.866Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-28T13:40:16.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "AgendaService.cs",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\API\\Services\\AgendaService.cs",
               "RelativeDocumentMoniker": "..\\API\\Services\\AgendaService.cs",
@@ -311,18 +310,7 @@
               "RelativeToolTip": "..\\API\\Services\\AgendaService.cs",
               "ViewState": "AgIAAHIBAAAAAAAAAAAqwIgBAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:20:08.312Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2026-08-28T13:20:08.312Z"
             }
           ]
         }
