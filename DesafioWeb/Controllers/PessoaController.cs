@@ -16,15 +16,14 @@ namespace DesafioWeb.Controllers
             http = httpClientFactory.CreateClient();
         }
 
-        public async Task<IActionResult> Index(
-            string? TermoBusca,
-            string? TipoFiltro)
+        public async Task<IActionResult> Index(string? TermoBusca, string? TipoFiltro)
         {
             string url = "https://localhost:7234/api/Agenda";
 
             if (!string.IsNullOrWhiteSpace(TermoBusca))
             {
                 url += $"?busca={Uri.EscapeDataString(TermoBusca)}" + $"&tipoBusca={Uri.EscapeDataString(TipoFiltro ?? "")}";
+
             }
 
             var response = await http.GetAsync(url);
@@ -390,6 +389,7 @@ namespace DesafioWeb.Controllers
             return RedirectToAction(
                 nameof(Editar),
                 new { id = pessoaId });
+
         }
         [HttpGet]
         public IActionResult CriarTelefone(int pessoaId)
