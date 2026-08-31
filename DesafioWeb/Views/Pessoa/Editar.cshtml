@@ -15,11 +15,11 @@
 
 <form asp-action="Editar" method="post">
 
-    <input asp-for="Id" type="hidden" />
+    <input asp-for="Id" type="hidden"/>
 
     <input type="hidden"
            name="pessoaId"
-           value="@Model.Id" />
+           value="@Model.Id"/>
 
     <h4>Dados da Pessoa</h4>
 
@@ -30,8 +30,7 @@
 
         <input asp-for="Nome"
                class="form-control"
-               minlength="2"
-               maxlength="100" />
+               minlength="2"/>
 
         <span asp-validation-for="Nome"
               class="text-danger"></span>
@@ -41,7 +40,7 @@
         <label asp-for="CPF" class="form-label">CPF</label>
         <input asp-for="CPF" class="form-control"
                maxlength="11"
-               inputmode="numeric"/>
+               minlength="11"/>
     </div>
 
     <div class="mb-3">
@@ -51,12 +50,12 @@
 
         <input asp-for="DataNascimento"
                type="date"
-               class="form-control" />
+               class="form-control"/>
     </div>
 
     <div class="mb-3">
         <label asp-for="Email" class="form-label">Email</label>
-        <input asp-for="Email" class="form-control" />
+        <input asp-for="Email" class="form-control"/>
     </div>
 
     <hr />

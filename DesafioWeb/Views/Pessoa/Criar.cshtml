@@ -35,13 +35,12 @@
 
     <div class="mb-3">
         <label asp-for="Nome" class="form-label">
-            Nome
+            Nome Completo
         </label>
 
         <input asp-for="Nome"
                class="form-control"
-               minlength="2"
-               maxlength="100" />
+               minlength="2"/>
 
         <span asp-validation-for="Nome"
               class="text-danger"></span>
@@ -51,7 +50,7 @@
         <label asp-for="CPF" class="form-label">CPF</label>
         <input asp-for="CPF" class="form-control"
                maxlength="11"
-               inputmode="numeric"/>
+               minlength="11"/>
         <span asp-validation-for="CPF" class="text-danger"></span>
     </div>
 
@@ -62,7 +61,7 @@
 
         <input asp-for="DataNascimento"
                type="date"
-               class="form-control" />
+               class="form-control"/>
 
         <span asp-validation-for="DataNascimento"
               class="text-danger"></span>
@@ -70,7 +69,7 @@
 
     <div class="mb-3">
         <label asp-for="Email" class="form-label">Email</label>
-        <input asp-for="Email" class="form-control" />
+        <input asp-for="Email" class="form-control" inputmode="email" placeholder="nome@email.com"/>
         <span asp-validation-for="Email" class="text-danger"></span>
     </div>
 
@@ -85,8 +84,7 @@
 
         <input asp-for="Telefones[0].DDD"
                class="form-control"
-               maxlength="3"
-               inputmode="numeric"/>
+               maxlength="3"/>
 
         <span asp-validation-for="Telefones[0].DDD"
               class="text-danger"></span>
@@ -134,7 +132,7 @@
         <input asp-for="Enderecos[0].CEP"
                class="form-control"
                maxlength="8"
-               inputmode="numeric" />
+               minlength="8"/>
     </div>
 
     <div class="mb-3">

@@ -4,7 +4,6 @@ using Microsoft.Extensions.Options;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace DesafioWeb.Controllers
 {
@@ -25,8 +24,7 @@ namespace DesafioWeb.Controllers
 
             if (!string.IsNullOrWhiteSpace(TermoBusca))
             {
-                url += $"?busca={Uri.EscapeDataString(TermoBusca)}" +
-                       $"&tipoBusca={Uri.EscapeDataString(TipoFiltro ?? "")}";
+                url += $"?busca={Uri.EscapeDataString(TermoBusca)}" + $"&tipoBusca={Uri.EscapeDataString(TipoFiltro ?? "")}";
             }
 
             var response = await http.GetAsync(url);

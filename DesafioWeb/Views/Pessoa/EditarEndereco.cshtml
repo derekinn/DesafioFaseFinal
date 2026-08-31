@@ -16,8 +16,8 @@
 
 <form asp-action="EditarEndereco" method="post">
 
-    <input asp-for="Id" type="hidden" />
-    <input asp-for="PessoaId" type="hidden" />
+    <input asp-for="Id" type="hidden"/>
+    <input asp-for="PessoaId" type="hidden"/>
 
     <div class="mb-3">
         <label asp-for="CEP" class="form-label">
@@ -26,8 +26,7 @@
 
         <input asp-for="CEP"
                class="form-control"
-               maxlength="8"
-               inputmode="numeric" />
+               maxlength="8"/>
 
         <span asp-validation-for="CEP"
               class="text-danger"></span>
@@ -39,7 +38,7 @@
         </label>
 
         <input asp-for="Logradouro"
-               class="form-control" />
+               class="form-control"/>
     </div>
 
     <div class="mb-3">
@@ -48,7 +47,7 @@
         </label>
 
         <input asp-for="Numero"
-               class="form-control" />
+               class="form-control"/>
     </div>
 
     <div class="mb-3">
@@ -57,7 +56,7 @@
         </label>
 
         <input asp-for="Complemento"
-               class="form-control" />
+               class="form-control"/>
     </div> 
 
     <div class="mb-3">
@@ -66,7 +65,7 @@
         </label>
 
         <input asp-for="Bairro"
-               class="form-control" />
+               class="form-control"/>
     </div>
 
     <div class="mb-3">
@@ -75,7 +74,7 @@
         </label>
 
         <input asp-for="Cidade"
-               class="form-control" />
+               class="form-control"/>
     </div>
 
     <div class="mb-3">

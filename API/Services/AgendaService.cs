@@ -82,7 +82,7 @@ namespace API.Services
 
             var PessoaRepository = new PessoaRepository(cn, null);
 
-            return PessoaRepository.Listar();
+            return PessoaRepository.Listar() ;
         }
         public int DeletarPessoa(int id)
         {
