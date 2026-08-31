@@ -228,7 +228,7 @@ namespace DesafioWeb.Controllers
 
             if (resultado?.Success != true)
             {
-                ViewBag.Erro = resultado?.Error ?? "Erro ao cadastrar endereço.";
+                ViewBag.Erro = resultado?.Error ?? "Erro ao cadastrar endereço!";
                 return View(endereco);
             }
 
@@ -244,7 +244,7 @@ namespace DesafioWeb.Controllers
             var response = await http.GetAsync(url);
             if (!response.IsSuccessStatusCode)
             {
-                ViewBag.Erro = "Não foi possível carregar o endereço.";
+                ViewBag.Erro = "Não foi possível carregar o endereço!";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -290,7 +290,7 @@ namespace DesafioWeb.Controllers
 
             if (resultado?.Success != true)
             {
-                ViewBag.Erro = resultado?.Error ?? "Erro ao atualizar endereço.";
+                ViewBag.Erro = resultado?.Error ?? "Erro ao atualizar endereço!";
 
                 return View(endereco);
             }
@@ -306,7 +306,7 @@ namespace DesafioWeb.Controllers
 
             if (!response.IsSuccessStatusCode)
             {
-                ViewBag.Erro = "Não foi possível carregar o telefone.";
+                ViewBag.Erro = "Não foi possível carregar o telefone!";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -321,7 +321,7 @@ namespace DesafioWeb.Controllers
 
             if (resultado?.Success != true || resultado.Telefone == null)
             {
-                ViewBag.Erro = resultado?.Error ?? "Telefone não encontrado.";
+                ViewBag.Erro = resultado?.Error ?? "Telefone não encontrado!";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -352,7 +352,7 @@ namespace DesafioWeb.Controllers
 
             if (resultado?.Success != true)
             {
-                ViewBag.Erro = resultado?.Error ?? "Erro ao atualizar telefone.";
+                ViewBag.Erro = resultado?.Error ?? "Erro ao atualizar telefone!";
 
                 return View(telefone);
             }
@@ -379,7 +379,7 @@ namespace DesafioWeb.Controllers
 
             if (resultado?.Success != true)
             {
-                TempData["Erro"] = resultado?.Error ?? "Erro ao deletar endereço.";
+                TempData["Erro"] = resultado?.Error ?? "Erro ao deletar endereço!";
 
                 return RedirectToAction(
                     nameof(Editar),
@@ -425,7 +425,7 @@ namespace DesafioWeb.Controllers
 
             if (resultado?.Success != true)
             {
-                ViewBag.Erro = resultado?.Error ?? "Erro ao cadastrar telefone.";
+                ViewBag.Erro = resultado?.Error ?? "Erro ao cadastrar telefone!";
 
                 return View(telefone);
             }
@@ -452,7 +452,7 @@ namespace DesafioWeb.Controllers
 
             if (resultado?.Success != true)
             {
-                TempData["Erro"] = resultado?.Error ?? "Erro ao deletar telefone.";
+                TempData["Erro"] = resultado?.Error ?? "Erro ao deletar telefone!";
 
                 return RedirectToAction(
                     nameof(Editar),
@@ -487,7 +487,7 @@ namespace DesafioWeb.Controllers
             if (resultado?.Success != true || resultado.Pessoa == null)
             {
                 return Content(
-                    resultado?.Error ?? "Pessoa não encontrada.");
+                    resultado?.Error ?? "Pessoa não encontrada!");
             }
 
             return PartialView("_DetalhesPessoa", resultado.Pessoa);
