@@ -20,7 +20,7 @@ namespace DesafioWeb.Controllers
         {
             string url = "https://localhost:7234/api/Agenda";
 
-            if (!string.IsNullOrWhiteSpace(TermoBusca))
+            if (!string.IsNullOrWhiteSpace(TermoBusca)) 
             {
                 url += $"?busca={Uri.EscapeDataString(TermoBusca)}" + $"&tipoBusca={Uri.EscapeDataString(TipoFiltro ?? "")}";
 
@@ -86,7 +86,7 @@ namespace DesafioWeb.Controllers
 
             var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
                 resposta,
-                new JsonSerializerOptions
+                new JsonSerializerOptions 
                 {
                     PropertyNameCaseInsensitive = true
                 });
@@ -158,7 +158,7 @@ namespace DesafioWeb.Controllers
                     PropertyNameCaseInsensitive = true
                 });
 
-            if (resultado?.Success != true)
+            if (resultado?.Success != true) 
             {
                 ViewBag.Erro = resultado?.Error ?? "Erro ao atualizar pessoa!";
 
