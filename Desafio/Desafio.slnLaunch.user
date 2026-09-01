@@ -8,7 +8,7 @@
         "DebugTarget": "https"
       },
       {
-        "Path": "Desafio.csproj",
+        "Path": "..\\DesafioWeb\\DesafioWeb.csproj",
         "Action": "Start"
       }
     ]
