@@ -59,7 +59,7 @@ namespace DesafioWeb.Controllers
                 DataNascimento = DateOnly.FromDateTime(DateTime.Today)
             };
 
-            pessoa.Enderecos.Add(new EnderecoModel
+            pessoa.Enderecos.Add(new EnderecoModel 
             {
                 IsPrincipal = true
             });

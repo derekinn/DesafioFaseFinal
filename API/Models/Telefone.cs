@@ -17,8 +17,7 @@
             }
 
             if (string.IsNullOrWhiteSpace(Numero) ||
-                (Numero.Length != 8 && Numero.Length != 9) ||
-                !Numero.All(char.IsDigit))
+                (Numero.Length != 8 && Numero.Length != 9) || !Numero.All(char.IsDigit))
             {
                 throw new Exception(
                     "O telefone deve possuir 8 ou 9 dígitos numéricos!");

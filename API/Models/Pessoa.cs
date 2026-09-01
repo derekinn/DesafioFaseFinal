@@ -21,8 +21,18 @@
                 throw new Exception("Coloque exatamente um endereço principal!");
             }
         }
+        public void ValidarNascimento()
+        {
+            if (DataNascimento.ToDateTime(TimeOnly.MinValue) > DateTime.Today)
+            {
+                throw new Exception("A data de nascimento não pode ser no futuro!");
+            }
+        }
         public void Validar()
         {
+            ValidarEnderecos();
+            ValidarNascimento();
+
             if (string.IsNullOrWhiteSpace(CPF) || CPF.Length != 11 || !CPF.All(char.IsDigit))
             {
                 throw new Exception("O CPF deve ter exatamente 11 dígitos!");
@@ -41,11 +51,10 @@
             {
                 throw new Exception("O nome não pode possuir números!");
             }
-            if (string.IsNullOrWhiteSpace(Email) || !Email.Contains("@") || !Email.Contains("mail."))
+            if (string.IsNullOrWhiteSpace(Email) || !Email.Contains("@") || !Email.Contains("."))
             {
                 throw new Exception("O email está invalido!");
             }
-            ValidarEnderecos();
             foreach(var telefone in Telefones)
             {
                 telefone.Validar();
