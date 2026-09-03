@@ -59,6 +59,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/NovoEndereco.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXE5vdm9FbmRlcmVjby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/NovoTelefone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXE5vdm9UZWxlZm9uZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/DevEnv/Cadastro de Pessoas/DesafioWeb/Views/Pessoa/_DetalhesPessoa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXF9EZXRhbGhlc1Blc3NvYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

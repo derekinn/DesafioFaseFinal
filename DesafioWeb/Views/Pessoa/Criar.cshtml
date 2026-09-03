@@ -123,6 +123,7 @@
         <span asp-validation-for="Telefones[0].Tipo"
               class="text-danger"></span>
     </div>
+
     <a asp-controller="Pessoa"
        asp-action="CriarTelefone"
        asp-route-pessoaId="@Model.Id"
@@ -132,6 +133,7 @@
        title="Adicionar telefone">
       <i class="bi bi-telephone-plus"></i>
     </a>
+
     <hr />
 
     <h4>Endereço</h4>
@@ -260,4 +262,9 @@
     campoNome.addEventListener("input", function() {
         this.value = this.value.replace(/[0-9]/g, "");
     });
+
+    async function NovoTelefone(id){
+
+        const conteudo = document.getElementById("AddNovoTelefone");
+    }
 </script>
