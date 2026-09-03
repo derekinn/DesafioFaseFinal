@@ -98,17 +98,23 @@
                             <a asp-controller="Pessoa"
                                asp-action="EditarTelefone"
                                asp-route-id="@telefone.Id"
-                               class="btn btn-sm btn-warning">
-                                Editar
+                               class="btn btn-sm btn-warning"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Editar telefone">
+                                <i class="bi bi-pencil-square"></i>
                             </a>
                             <button type="submit"
                                     class="btn btn-sm btn-danger"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Excluir telefone"
                                     formaction="@Url.Action("DeletarTelefone", "Pessoa")"
                                     formmethod="post"
                                     name="telefoneId"
                                     value="@telefone.Id"
                                     onclick="return confirm('Tem certeza que deseja excluir este telefone?');">
-                                Excluir
+                                    <i class="bi bi-trash"></i>
                             </button>
                         </td>
                     </tr>
@@ -124,8 +130,11 @@
     <a asp-controller="Pessoa"
        asp-action="CriarTelefone"
        asp-route-pessoaId="@Model.Id"
-       class="btn btn-primary">
-        Adicionar telefone
+       class="btn btn-primary"
+       data-bs-toggle="tooltip"
+       data-bs-placement="top"
+       title="Adicionar telefone">
+       <i class="bi bi-telephone-plus"></i>
     </a>
 
     <h4>Endereços</h4>
@@ -189,18 +198,24 @@
                             <a asp-controller="Pessoa"
                                asp-action="EditarEndereco"
                                asp-route-id="@endereco.Id"
-                               class="btn btn-sm btn-warning">
-                                Editar
+                               class="btn btn-sm btn-warning"
+                               data-bs-toggle="tooltip"
+                               data-bs-placement="top"
+                               title="Editar endereço">
+                               <i class="bi bi-pencil-square"></i>
                             </a>
 
                             <button type="submit"
                                     class="btn btn-sm btn-danger"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Excluir endereço"
                                     formaction="@Url.Action("DeletarEndereco", "Pessoa")"
                                     formmethod="post"
                                     name="enderecoId"
                                     value="@endereco.Id"
                                     onclick="return confirm('Tem certeza que deseja excluir este endereço?');">
-                                Excluir
+                                    <i class="bi bi-trash"></i>
                             </button>
 
                         </td>
@@ -217,8 +232,11 @@
     <a asp-controller="Pessoa"
        asp-action="CriarEndereco"
        asp-route-pessoaId="@Model.Id"
-       class="btn btn-primary">
-        Adicionar endereço
+       class="btn btn-primary"
+       data-bs-toggle="tooltip"
+       data-bs-placement="top"
+       title="Adicionar endereço">
+       <i class="bi bi-house-add"></i>
     </a>
 
     <hr />

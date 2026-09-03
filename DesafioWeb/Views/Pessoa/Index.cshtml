@@ -19,8 +19,12 @@
 
     <a asp-controller="Pessoa"
        asp-action="Criar"
-       class="btn btn-primary px-4 fw-bold flex-shrink-0">
-        Nova Pessoa
+       class="btn btn-primary px-4 fw-bold flex-shrink-0"
+       data-bs-toggle="tooltip"
+       data-bs-placement="top"
+       title="Adicionar pessoa">
+       Nova pessoa
+       <i class="bi bi-person-plus"></i>
     </a>
 
     <form asp-controller="Pessoa"
@@ -56,15 +60,21 @@
                class="form-control flex-grow-1"
                value="@Context.Request.Query["TermoBusca"]"/>
 
-        <button type="submit"
-                class="btn btn-primary px-4 fw-bold flex-shrink-0">
-            Buscar
+        <button type="submit" 
+                class="btn btn-primary px-4 fw-bold flex-shrink-0"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Buscar pessoa">
+                <i class="bi bi-search"></i>
         </button>
 
         <a asp-controller="Pessoa"
            asp-action="Index"
-           class="btn btn-outline-primary px-4 fw-bold flex-shrink-0">
-            Redefinir
+           class="btn btn-primary px-4 fw-bold flex-shrink-0"
+           data-bs-toggle="tooltip"
+           data-bs-placement="top"
+           title="Limpar filtros">
+            <i class="bi bi-eraser"></i>
         </a>
 
     </form>
@@ -100,15 +110,21 @@
                 <td>
                     <button type="button"
                             class="btn btn-sm btn-warning"
-                            onclick="AbrirDetalhes(@pessoa.Id)">
-                        Detalhes
+                            onclick="AbrirDetalhes(@pessoa.Id)"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="top" 
+                            title="Detalhes da pessoa">
+                            <i class="bi bi-info-circle"></i>
                     </button>
 
                     <a asp-controller="Pessoa"
                        asp-action="Editar"
                        asp-route-id="@pessoa.Id"
-                       class="btn btn-sm btn-info">
-                        Editar
+                       class="btn btn-sm btn-info"
+                       data-bs-toggle="tooltip"
+                       data-bs-placement="top"
+                       title="Editar pessoa">
+                       <i class="bi bi-pencil-square"></i>
                     </a>
 
                     <form asp-action="Deletar"
@@ -117,9 +133,12 @@
                           style="display:inline;">
 
                         <button type="submit"
+                                data-bs-toggle="tooltip" 
+                                data-bs-placement="top" 
+                                title="Deletar pessoa"
                                 class="btn btn-sm btn-danger"
                                 onclick="return confirm('Tem certeza que deseja excluir esta pessoa?');">
-                            Excluir
+                                <i class="bi bi-trash"></i>
                         </button>
 
                     </form>
