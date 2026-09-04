@@ -21,13 +21,6 @@
                 throw new Exception("Coloque exatamente um endereço principal!");
             }
         }
-        public void ValidarNascimento()
-        {
-            if (DataNascimento.ToDateTime(TimeOnly.MinValue) > DateTime.Today)
-            {
-                throw new Exception("A data de nascimento não pode ser no futuro!");
-            }
-        }
         public void Validar()
         {
             ValidarEnderecos();
@@ -55,13 +48,27 @@
             {
                 throw new Exception("O email está invalido!");
             }
-            foreach(var telefone in Telefones)
+            foreach (var telefone in Telefones)
             {
+                if (string.IsNullOrWhiteSpace(telefone.DDD) &&
+                    string.IsNullOrWhiteSpace(telefone.Numero) &&
+                    string.IsNullOrWhiteSpace(telefone.Tipo))
+                {
+                    continue;
+                }
+
                 telefone.Validar();
             }
-            foreach(var endereco in Enderecos)
+            foreach (var endereco in Enderecos)
             {
                 endereco.Validar();
+            }
+        }
+        public void ValidarNascimento()
+        {
+            if (DataNascimento.ToDateTime(TimeOnly.MinValue) > DateTime.Today)
+            {
+                throw new Exception("A data de nascimento não pode ser no futuro!");
             }
         }
     }

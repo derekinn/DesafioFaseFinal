@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesafioWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d2d9c43bbab137e817e363c400c3d3d7e25a89a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85dff2031287a37911922ef4b4737eab0fa70504")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesafioWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesafioWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
