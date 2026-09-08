@@ -90,9 +90,9 @@
               "Title": "Criar.cshtml",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
-              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
-              "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml",
-              "ViewState": "AgIAAGcBAAAAAAAAAADwv3YBAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml*",
+              "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Criar.cshtml*",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAqwHsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-08T10:18:21.778Z",
               "EditorCaption": ""
@@ -107,8 +107,7 @@
               "RelativeToolTip": "..\\API\\Controllers\\AgendaController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAwwDYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T16:16:50.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-04T16:16:50.742Z"
             },
             {
               "$type": "Document",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
               "ViewState": "AgIAACABAAAAAAAAAAAAADQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-04T13:50:24.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-04T13:50:24.906Z"
             }
           ]
         },

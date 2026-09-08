@@ -88,7 +88,7 @@
         <input asp-for="Telefones[0].DDD"
                class="form-control"
                maxlength="3"
-               placeholder="Insira o DDD"/>
+               placeholder="Insira o DDD" />
 
         <span asp-validation-for="Telefones[0].DDD"
               class="text-danger"></span>
@@ -99,10 +99,10 @@
             Número
         </label>
 
-        <input asp-for="Telefones[0].Numero" 
+        <input asp-for="Telefones[0].Numero"
                class="form-control"
                maxlength="9"
-               placeholder="Insira o número"/>
+               placeholder="Insira o número" />
 
         <span asp-validation-for="Telefones[0].Numero"
               class="text-danger"></span>
@@ -129,7 +129,7 @@
             data-bs-toggle="modal"
             data-bs-target="#modalNovoTelefone"
             title="Adicionar telefone">
-        <i class="bi bi-telephone-plus"></i>
+        <i class="bi bi-telephone-plus">Adicionar telefone</i>
     </button>
 
     <hr />
@@ -229,11 +229,8 @@
         <a asp-controller="Pessoa"
            asp-action="CriarEndereco"
            asp-route-pessoaId="@Model.Id"
-           class="btn btn-primary"
-           data-bs-toggle="tooltip"
-           data-bs-placement="top"
-           title="Adicionar endereço">
-            <i class="bi bi-house-add"></i>
+           class="btn btn-primary">
+            <i class="bi bi-house-add"> Adicionar endereço</i>
         </a>
     </div>
 
@@ -370,10 +367,14 @@
 
         const listaTelefones = document.getElementById("listaTelefones");
 
+        const indice = document.querySelectorAll(
+            "#listaTelefones .telefone-item"
+        ).length + 1;
+
         const telefone = document.createElement("div");
 
         telefone.className =
-            "alert alert-info d-flex justify-content-between align-items-center";
+            "telefone-item alert alert-info d-flex justify-content-between align-items-center";
 
         telefone.innerHTML = `
             <span>
@@ -382,9 +383,21 @@
 
             <button type="button"
                     class="btn btn-sm btn-danger"
-                    onclick="this.parentElement.remove()">
+                    onclick="RemoverTelefone(this)">
                 <i class="bi bi-trash"></i>
             </button>
+
+            <input type="hidden"
+                   name="Telefones[${indice}].DDD"
+                   value="${ddd}" />
+
+            <input type="hidden"
+                   name="Telefones[${indice}].Numero"
+                   value="${numero}" />
+
+            <input type="hidden"
+                   name="Telefones[${indice}].Tipo"
+                   value="${tipo}" />
         `;
 
         listaTelefones.appendChild(telefone);
@@ -398,6 +411,10 @@
         document.getElementById("NovoTelefoneDDD").value = "";
         document.getElementById("NovoTelefoneNumero").value = "";
         document.getElementById("NovoTelefoneTipo").value = "";
+    }
+    function RemoverTelefone(botao) {
+        botao.parentElement.remove();
+    }
  
  }
 </script>
