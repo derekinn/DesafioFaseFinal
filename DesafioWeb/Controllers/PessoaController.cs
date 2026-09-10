@@ -1,7 +1,5 @@
 ﻿using DesafioWeb.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Text.Json;
 
@@ -36,12 +34,7 @@ namespace DesafioWeb.Controllers
 
             string json = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseListaPessoasModel>(
-                json,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseListaPessoasModel>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
@@ -75,21 +68,14 @@ namespace DesafioWeb.Controllers
 
             var json = JsonSerializer.Serialize(pessoa);
 
-            var conteudo = new StringContent(
-                json,
-                Encoding.UTF8,
+            var conteudo = new StringContent(json, Encoding.UTF8,
                 "application/json");
 
             var response = await http.PostAsync(url, conteudo);
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions 
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
@@ -115,12 +101,7 @@ namespace DesafioWeb.Controllers
 
             string json = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponsePessoaModel>(
-                json,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponsePessoaModel>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true || resultado.Pessoa == null)
             {
@@ -142,21 +123,13 @@ namespace DesafioWeb.Controllers
 
             var json = JsonSerializer.Serialize(pessoa);
 
-            var conteudo = new StringContent(
-                json,
-                Encoding.UTF8,
-                "application/json");
+            var conteudo = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await http.PutAsync(url, conteudo);
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true) 
             {
@@ -176,12 +149,7 @@ namespace DesafioWeb.Controllers
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
@@ -210,21 +178,13 @@ namespace DesafioWeb.Controllers
 
             var json = JsonSerializer.Serialize(endereco);
 
-            var conteudo = new StringContent(
-                json,
-                Encoding.UTF8,
-                "application/json");
+            var conteudo = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await http.PostAsync(url, conteudo);
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
@@ -232,9 +192,7 @@ namespace DesafioWeb.Controllers
                 return View(endereco);
             }
 
-            return RedirectToAction(
-                nameof(Editar),
-                new { id = endereco.PessoaId });
+            return RedirectToAction(nameof(Editar), new { id = endereco.PessoaId });
         }
         [HttpGet]
         public async Task<IActionResult> EditarEndereco(int id)
@@ -250,12 +208,7 @@ namespace DesafioWeb.Controllers
 
             string json = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseEnderecoModel>(
-                json,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseEnderecoModel>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true || resultado.Endereco == null)
             {
@@ -272,21 +225,13 @@ namespace DesafioWeb.Controllers
 
             var json = JsonSerializer.Serialize(endereco);
 
-            var conteudo = new StringContent(
-                json,
-                Encoding.UTF8,
-                "application/json");
+            var conteudo = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await http.PutAsync(url, conteudo);
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
@@ -312,12 +257,7 @@ namespace DesafioWeb.Controllers
 
             string json = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseTelefoneModel>(
-                json,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseTelefoneModel>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true || resultado.Telefone == null)
             {
@@ -334,21 +274,13 @@ namespace DesafioWeb.Controllers
 
             var json = JsonSerializer.Serialize(telefone);
 
-            var conteudo = new StringContent(
-                json,
-                Encoding.UTF8,
-                "application/json");
+            var conteudo = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await http.PutAsync(url, conteudo);
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
@@ -357,9 +289,7 @@ namespace DesafioWeb.Controllers
                 return View(telefone);
             }
 
-            return RedirectToAction(
-                nameof(Editar),
-                new { id = telefone.PessoaId });
+            return RedirectToAction(nameof(Editar), new { id = telefone.PessoaId });
         }
         [HttpPost]
         public async Task<IActionResult> DeletarEndereco(int enderecoId, int pessoaId)
@@ -370,25 +300,16 @@ namespace DesafioWeb.Controllers
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
                 TempData["Erro"] = resultado?.Error ?? "Erro ao deletar endereço!";
 
-                return RedirectToAction(
-                    nameof(Editar),
-                    new { id = pessoaId });
+                return RedirectToAction(nameof(Editar), new { id = pessoaId });
             }
 
-            return RedirectToAction(
-                nameof(Editar),
-                new { id = pessoaId });
+            return RedirectToAction(nameof(Editar), new { id = pessoaId });
 
         }
         [HttpGet]
@@ -407,21 +328,13 @@ namespace DesafioWeb.Controllers
 
             var json = JsonSerializer.Serialize(telefone);
 
-            var conteudo = new StringContent(
-                json,
-                Encoding.UTF8,
-                "application/json");
+            var conteudo = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await http.PostAsync(url, conteudo);
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
@@ -430,9 +343,7 @@ namespace DesafioWeb.Controllers
                 return View(telefone);
             }
 
-            return RedirectToAction(
-                nameof(Editar),
-                new { id = telefone.PessoaId });
+            return RedirectToAction(nameof(Editar), new { id = telefone.PessoaId });
         }
         [HttpPost]
         public async Task<IActionResult> DeletarTelefone(int telefoneId, int pessoaId)
@@ -443,25 +354,16 @@ namespace DesafioWeb.Controllers
 
             string resposta = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(
-                resposta,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponseAPIModel>(resposta, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true)
             {
                 TempData["Erro"] = resultado?.Error ?? "Erro ao deletar telefone!";
 
-                return RedirectToAction(
-                    nameof(Editar),
-                    new { id = pessoaId });
+                return RedirectToAction(nameof(Editar), new { id = pessoaId });
             }
 
-            return RedirectToAction(
-                nameof(Editar),
-                new { id = pessoaId });
+            return RedirectToAction(nameof(Editar), new { id = pessoaId });
         }
         [HttpGet]
         public async Task<IActionResult> Detalhes(int id)
@@ -477,17 +379,11 @@ namespace DesafioWeb.Controllers
 
             string json = await response.Content.ReadAsStringAsync();
 
-            var resultado = JsonSerializer.Deserialize<ResponsePessoaModel>(
-                json,
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            var resultado = JsonSerializer.Deserialize<ResponsePessoaModel>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             if (resultado?.Success != true || resultado.Pessoa == null)
             {
-                return Content(
-                    resultado?.Error ?? "Pessoa não encontrada!");
+                return Content(resultado?.Error ?? "Pessoa não encontrada!");
             }
 
             return PartialView("_DetalhesPessoa", resultado.Pessoa);

@@ -17,62 +17,29 @@
 
 <div class="mb-4 d-flex align-items-center justify-content-between gap-3">
 
-    <a asp-controller="Pessoa"
-       asp-action="Criar"
-       class="btn btn-primary px-4 fw-bold flex-shrink-0"
-       data-bs-toggle="tooltip"
-       data-bs-placement="top"
-       title="Adicionar pessoa">
+    <a asp-controller="Pessoa" asp-action="Criar" class="btn btn-primary px-4 fw-bold flex-shrink-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Adicionar pessoa">
        <i class="bi bi-person-plus"> Nova pessoa</i>
     </a>
 
-    <form asp-controller="Pessoa"
-          asp-action="Index"
-          method="get"
-          class="d-flex align-items-center gap-2 flex-grow-1"
-          id="formBusca">
+    <form asp-controller="Pessoa" asp-action="Index" method="get" class="d-flex align-items-center gap-2 flex-grow-1" id="formBusca">
 
-        <span class="fs-5 text-secondary fw-bold ms-auto me-1">
-            Buscar
-        </span>
+        <span class="fs-5 text-secondary fw-bold ms-auto me-1">Buscar</span>
 
-        <select name="TipoFiltro"
-                id="TipoFiltro"
-                class="form-select bg-light flex-shrink-0"
-                style="width: 100px;">
+        <select name="TipoFiltro" id="TipoFiltro" class="form-select bg-light flex-shrink-0" style="width: 100px;">
 
-            <option value="CPF"
-                    selected="@(Context.Request.Query["TipoFiltro"] == "CPF" || string.IsNullOrEmpty(Context.Request.Query["TipoFiltro"]))">
-                CPF
-            </option>
+            <option value="CPF" selected="@(Context.Request.Query["TipoFiltro"] == "CPF" || string.IsNullOrEmpty(Context.Request.Query["TipoFiltro"]))">CPF</option>
 
-            <option value="Nome"
-                    selected="@(Context.Request.Query["TipoFiltro"] == "Nome")">
-                Nome
-            </option>
+            <option value="Nome" selected="@(Context.Request.Query["TipoFiltro"] == "Nome")">Nome</option>
 
         </select>
 
-        <input type="text"
-               name="TermoBusca"
-               id="TermoBusca"
-               class="form-control flex-grow-1"
-               value="@Context.Request.Query["TermoBusca"]"/>
+        <input type="text" name="TermoBusca" id="TermoBusca" class="form-control flex-grow-1" value="@Context.Request.Query["TermoBusca"]"/>
 
-        <button type="submit" 
-                class="btn btn-primary px-4 fw-bold flex-shrink-0"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                title="Buscar pessoa">
+        <button type="submit" class="btn btn-primary px-4 fw-bold flex-shrink-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Buscar pessoa">
                 <i class="bi bi-search"></i>
         </button>
 
-        <a asp-controller="Pessoa"
-           asp-action="Index"
-           class="btn btn-primary px-4 fw-bold flex-shrink-0"
-           data-bs-toggle="tooltip"
-           data-bs-placement="top"
-           title="Limpar filtros">
+        <a asp-controller="Pessoa" asp-action="Index" class="btn btn-primary px-4 fw-bold flex-shrink-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Limpar filtros">
             <i class="bi bi-eraser"></i>
         </a>
 
@@ -80,10 +47,7 @@
 
 </div>
 
-<div id="erroBusca"
-     class="alert alert-danger"
-     style="display: none;">
-</div>
+<div id="erroBusca" class="alert alert-danger" style="display: none;"></div>
 
 
 <table class="table table-striped">
@@ -107,36 +71,17 @@
                 <td>@pessoa.Email</td>
 
                 <td>
-                    <button type="button"
-                            class="btn btn-sm btn-warning"
-                            onclick="AbrirDetalhes(@pessoa.Id)"
-                            data-bs-toggle="tooltip" 
-                            data-bs-placement="top" 
-                            title="Detalhes da pessoa">
+                    <button type="button" class="btn btn-sm btn-warning" onclick="AbrirDetalhes(@pessoa.Id)" data-bs-toggle="tooltip" data-bs-placement="top" title="Detalhes da pessoa">
                             <i class="bi bi-info-circle"></i>
                     </button>
 
-                    <a asp-controller="Pessoa"
-                       asp-action="Editar"
-                       asp-route-id="@pessoa.Id"
-                       class="btn btn-sm btn-info"
-                       data-bs-toggle="tooltip"
-                       data-bs-placement="top"
-                       title="Editar pessoa">
+                    <a asp-controller="Pessoa" asp-action="Editar" asp-route-id="@pessoa.Id" class="btn btn-sm btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar pessoa">
                        <i class="bi bi-pencil-square"></i>
                     </a>
 
-                    <form asp-action="Deletar"
-                          asp-route-id="@pessoa.Id"
-                          method="post"
-                          style="display:inline;">
+                    <form asp-action="Deletar" asp-route-id="@pessoa.Id" method="post" style="display:inline;">
 
-                        <button type="submit"
-                                data-bs-toggle="tooltip" 
-                                data-bs-placement="top" 
-                                title="Deletar pessoa"
-                                class="btn btn-sm btn-danger"
-                                onclick="return confirm('Tem certeza que deseja excluir esta pessoa?');">
+                        <button type="submit" data-bs-toggle="tooltip" data-bs-placement="top" title="Deletar pessoa" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza que deseja excluir esta pessoa?');">
                                 <i class="bi bi-trash"></i>
                         </button>
 
@@ -148,24 +93,15 @@
 </table>
 
 
-<div class="modal fade"
-     id="modalDetalhes"
-     tabindex="-1"
-     aria-labelledby="modalDetalhesLabel"
-     aria-hidden="true">
+<div class="modal fade" id="modalDetalhes" tabindex="-1" aria-labelledby="modalDetalhesLabel" aria-hidden="true">
 
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
             <div class="modal-header">
-                <h5 class="modal-title" id="modalDetalhesLabel">
-                    Detalhes da Pessoa
-                </h5>
+                <h5 class="modal-title" id="modalDetalhesLabel">Detalhes da Pessoa</h5>
 
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Fechar">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
                 </button>
             </div>
 
@@ -173,11 +109,7 @@
 
             <div class="modal-footer">
 
-                <button type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal">
-                    Fechar
-                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
 
             </div>
 
@@ -188,14 +120,16 @@
 
 <script>
 
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() 
+        {
 
         const SelectFiltro = document.getElementById("TipoFiltro");
         const InputBusca = document.getElementById("TermoBusca");
         const FormBusca = document.getElementById("formBusca");
         const ErroBusca = document.getElementById("erroBusca");
 
-        function AtualizarPlaceholder() {
+        function AtualizarPlaceholder() 
+        {
 
             if (SelectFiltro.value === "CPF") {
                 InputBusca.placeholder = "Escreva o CPF";
@@ -205,7 +139,8 @@
             }
         }
 
-        function MostrarErro(mensagem) {
+        function MostrarErro(mensagem) 
+        {
 
             ErroBusca.textContent = mensagem;
             ErroBusca.style.display = "block";
@@ -213,7 +148,8 @@
             InputBusca.focus();
         }
 
-        function LimparErro() {
+        function LimparErro() 
+        {
 
             ErroBusca.textContent = "";
             ErroBusca.style.display = "none";
@@ -232,14 +168,16 @@
             InputBusca.focus();
         });
 
-        FormBusca.addEventListener("submit", function(event) {
+        FormBusca.addEventListener("submit", function(event) 
+        {
 
             LimparErro();
 
             const tipo = SelectFiltro.value;
             const termo = InputBusca.value.trim();
 
-            if (termo === "") {
+            if (termo === "") 
+            {
 
                 event.preventDefault();
 
@@ -250,9 +188,11 @@
                 return;
             }
 
-            if (tipo === "CPF") {
+            if (tipo === "CPF") 
+            {
 
-                if (termo.split("").some(caractere => isNaN(caractere))) {
+                if (termo.split("").some(caractere => isNaN(caractere))) 
+                {
 
                     event.preventDefault();
 
@@ -263,7 +203,8 @@
                     return;
                 }
 
-                if (termo.length !== 11) {
+                if (termo.length !== 11) 
+                {
 
                     event.preventDefault();
 
@@ -275,9 +216,11 @@
                 }
             }
 
-            if (tipo === "Nome") {
+            if (tipo === "Nome") 
+            {
 
-                if (termo.split("").some(caractere => !isNaN(caractere))) {
+                if (termo.split("").some(caractere => !isNaN(caractere))) 
+                {
 
                     event.preventDefault();
 
@@ -288,7 +231,8 @@
                     return;
                 }
 
-                if (termo.length < 2) {
+                if (termo.length < 2) 
+                {
 
                     event.preventDefault();
 
@@ -305,7 +249,8 @@
     });
 
 
-    async function AbrirDetalhes(id) {
+    async function AbrirDetalhes(id) 
+    {
 
         const conteudo = document.getElementById("conteudoDetalhes");
 

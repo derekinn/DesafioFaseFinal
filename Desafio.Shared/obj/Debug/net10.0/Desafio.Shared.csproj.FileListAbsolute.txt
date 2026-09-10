@@ -10,3 +10,4 @@ C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.dl
 C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\refint\Desafio.Shared.dll
 C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio.Shared.pdb
 C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\ref\Desafio.Shared.dll
+C:\DevEnv\Cadastro de Pessoas\Desafio.Shared\obj\Debug\net10.0\Desafio..B4245BD0.Up2Date

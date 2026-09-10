@@ -23,24 +23,15 @@
             CEP
         </label>
 
-        <input asp-for="CEP"
-               class="form-control"
-               maxlength="8"
-               minlength="8"
-               placeholder="Insira o CEP"/>
+        <input asp-for="CEP" class="form-control" maxlength="8" minlength="8" placeholder="Coloque o CEP"/>
 
-        <span asp-validation-for="CEP"
-              class="text-danger"></span>
+        <span asp-validation-for="CEP" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Logradouro" class="form-label">
-            Logradouro
-        </label>
+        <label asp-for="Logradouro" class="form-label">Logradouro</label>
 
-        <input asp-for="Logradouro"
-               class="form-control"
-               placeholder="Insira o Logradouro"/>
+        <input asp-for="Logradouro" class="form-control" placeholder="Coloque o Logradouro"/>
     </div>
 
     <div class="mb-3">
@@ -48,48 +39,31 @@
             Número
         </label>
 
-        <input asp-for="Numero"
-               class="form-control"
-               placeholder="Insira o número"/>
+        <input asp-for="Numero" class="form-control" placeholder="Coloque o número"/>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Complemento" class="form-label">
-            Complemento
-        </label>
+        <label asp-for="Complemento" class="form-label">Complemento</label>
 
-        <input asp-for="Complemento"
-               class="form-control"
-               placeholder="Insira o complemento"/>
+        <input asp-for="Complemento" class="form-control" placeholder="Coloque o complemento"/>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Bairro" class="form-label">
-            Bairro
-        </label>
+        <label asp-for="Bairro" class="form-label">Bairro</label>
 
-        <input asp-for="Bairro"
-               class="form-control"
-               placeholder="Insira o bairro"/>
+        <input asp-for="Bairro" class="form-control" placeholder="Insira o bairro"/>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Cidade" class="form-label">
-            Cidade
-        </label>
+        <label asp-for="Cidade" class="form-label">Cidade</label>
 
-        <input asp-for="Cidade"
-               class="form-control"
-               placeholder="Insira a cidade"/>
+        <input asp-for="Cidade" class="form-control" placeholder="Insira a cidade"/>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Estado" class="form-label">
-            Estado
-        </label>
+        <label asp-for="Estado" class="form-label">Estado</label>
 
-        <select asp-for="Estado"
-                class="form-select">
+        <select asp-for="Estado" class="form-select">
 
             <option value="">Selecione o Estado</option>
 
@@ -100,28 +74,17 @@
 
         </select>
 
-        <span asp-validation-for="Estado"
-              class="text-danger"></span>
+        <span asp-validation-for="Estado" class="text-danger"></span>
     </div>
 
     <div class="form-check mb-3">
-        <input asp-for="IsPrincipal"
-               class="form-check-input"/>
+        <input asp-for="IsPrincipal" class="form-check-input"/>
 
-        <label asp-for="IsPrincipal"
-               class="form-check-label">
-            Endereço principal
-        </label>
+        <label asp-for="IsPrincipal" class="form-check-label">Endereço principal</label>
     </div>
 
-    <button type="submit" class="btn btn-success">
-        Salvar
-    </button>
+    <button type="submit" class="btn btn-success">Salvar</button>
 
-    <a asp-action="Editar"
-       asp-route-id="@Model.PessoaId"
-       class="btn btn-secondary">
-        Cancelar
-    </a>
+    <a asp-action="Editar" asp-route-id="@Model.PessoaId" class="btn btn-secondary">Cancelar</a>
 
 </form>

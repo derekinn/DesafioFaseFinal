@@ -151,11 +151,8 @@
                         <select id="NovoTelefoneTipo" class="form-select">
 
                             <option value="">Selecione o tipo</option>
-
                             <option value="Pessoal">Pessoal</option>
-
                             <option value="Comercial">Comercial</option>
-
                             <option value="Whatsapp">Whatsapp</option>
 
                         </select>
@@ -268,13 +265,15 @@
     <script>
         const CampoNome = document.getElementById("Nome");
 
-        if (CampoNome) {
+        if (CampoNome) 
+        {
             CampoNome.addEventListener("input", function() {
                 this.value = this.value.replace(/[0-9]/g, "");
             });
         }
 
-        function AdicionarTelefone() {
+        function AdicionarTelefone() 
+        {
             const ddd = document.getElementById("NovoTelefoneDDD").value;
             const numero = document.getElementById("NovoTelefoneNumero").value;
             const tipo = document.getElementById("NovoTelefoneTipo").value;
@@ -300,39 +299,28 @@
                                 <td>${tipo}</td>
 
                                 <td>
-                                    <button type="button"
-                                            class="btn btn-danger btn-sm"
-                                            onclick="RemoverTelefone(this)">
+                                    <button type="button" class="btn btn-danger btn-sm" onclick="RemoverTelefone(this)">
                                         <i class="bi bi-trash"></i>
                                     </button>
                                 </td>
 
-                                <input type="hidden"
-                                       name="Telefones.Index"
-                                       value="${indice}" />
+                                <input type="hidden" name="Telefones.Index" value="${indice}" />
 
-                                <input type="hidden"
-                                       name="Telefones[${indice}].DDD"
-                                       value="${ddd}" />
+                                <input type="hidden" name="Telefones[${indice}].DDD" value="${ddd}" />
 
-                                <input type="hidden"
-                                       name="Telefones[${indice}].Numero"
-                                       value="${numero}" />
+                                <input type="hidden" name="Telefones[${indice}].Numero" value="${numero}" />
 
-                                <input type="hidden"
-                                       name="Telefones[${indice}].Tipo"
-                                       value="${tipo}" />
+                                <input type="hidden" name="Telefones[${indice}].Tipo" value="${tipo}" />
                             `;
 
             listaTelefones.appendChild(linha);
 
-            const elementoModal =
-                document.getElementById("modalNovoTelefone");
+            const elementoModal = document.getElementById("modalNovoTelefone");
 
-            const modal =
-                bootstrap.Modal.getInstance(elementoModal);
+            const modal = bootstrap.Modal.getInstance(elementoModal);
 
-            if (modal) {
+            if (modal) 
+            {
                 modal.hide();
             }
 
@@ -341,7 +329,8 @@
             document.getElementById("NovoTelefoneTipo").value = "";
         }
 
-        function AdicionarEndereco() {
+        function AdicionarEndereco() 
+        {
             const cep = document.getElementById("NovoEnderecoCEP").value;
             const logradouro = document.getElementById("NovoEnderecoLogradouro").value;
             const numero = document.getElementById("NovoEnderecoNumero").value;
@@ -349,16 +338,16 @@
             const bairro = document.getElementById("NovoEnderecoBairro").value;
             const cidade = document.getElementById("NovoEnderecoCidade").value;
             const estado = document.getElementById("NovoEnderecoEstado").value;
-            const isprincipal = document.getElementById("NovoEnderecoIsPrincipal").value;
-            const campos = [cep, logradouro, numero, complemento, bairro, cidade, estado];
+            const isprincipal = document.getElementById("NovoEnderecoIsPrincipal").checked;
+            const campos = [cep, logradouro, numero, bairro, cidade, estado];
 
-            if (campos.some(campo => campo === "")) {
+            if (campos.some(campo => campo === "")) 
+            {
                 alert("Preencha todos os campos do endereço!");
                 return;
             }
 
-            const listaEnderecos =
-                document.getElementById("listaEnderecos");
+            const listaEnderecos = document.getElementById("listaEnderecos");
 
             const indice = Date.now();
 
@@ -374,32 +363,31 @@
                                 <td>${bairro}</td>
                                 <td>${cidade}</td>
                                 <td>${estado}</td>
-                                <td>${isprincipal}</td>
+                                        <td>${isprincipal ? '<span class="badge bg-success" style="color: white !important;">&#x2713;</span>' : ''}</td>
 
                                 <td>
                                    <button type="button" class="btn btn-danger btn-sm" onclick="RemoverEndereco(this)"><i class="bi bi-trash"></i></button>
                                 </td>
 
-                                <input type="hidden" name="Telefones.Index" value="${indice}" />
-                                <input type="hidden" name="Telefones[${indice}].CEP" value="${cep}" />
-                                <input type="hidden" name="Telefones[${indice}].Logradouro" value="${logradouro}" />
-                                <input type="hidden" name="Telefones[${indice}].Numero" value="${numero}" />
-                                <input type="hidden" name="Telefones[${indice}].Complemento" value="${complemento}" />
-                                <input type="hidden" name="Telefones[${indice}].Bairro" value="${bairro}" />
-                                <input type="hidden" name="Telefones[${indice}].Cidade" value="${cidade}" />
-                                <input type="hidden" name="Telefones[${indice}].Estado" value="${estado}" />
-                                <input type="hidden" name="Telefones[${indice}].IsPrincipal" value="${isprincipal}" />
+                                <input type="hidden" name="Enderecos.Index" value="${indice}" />
+                                <input type="hidden" name="Enderecos[${indice}].CEP" value="${cep}" />
+                                <input type="hidden" name="Enderecos[${indice}].Logradouro" value="${logradouro}" />
+                                <input type="hidden" name="Enderecos[${indice}].Numero" value="${numero}" />
+                                <input type="hidden" name="Enderecos[${indice}].Complemento" value="${complemento}" />
+                                <input type="hidden" name="Enderecos[${indice}].Bairro" value="${bairro}" />
+                                <input type="hidden" name="Enderecos[${indice}].Cidade" value="${cidade}" />
+                                <input type="hidden" name="Enderecos[${indice}].Estado" value="${estado}" />
+                                <input type="hidden" name="Enderecos[${indice}].IsPrincipal" value="${isprincipal}" />
                                     `;
 
             listaEnderecos.appendChild(linha);
 
-            const elementoModal =
-                document.getElementById("modalNovoEndereco");
+            const elementoModal = document.getElementById("modalNovoEndereco");
 
-            const modal =
-                bootstrap.Modal.getInstance(elementoModal);
+            const modal = bootstrap.Modal.getInstance(elementoModal);
 
-            if (modal) {
+            if (modal) 
+            {
                 modal.hide();
             }
 
@@ -410,14 +398,16 @@
             document.getElementById("NovoEnderecoBairro").value = "";
             document.getElementById("NovoEnderecoCidade").value = "";
             document.getElementById("NovoEnderecoEstado").value = "";
-            document.getElementById("NovoEnderecoIsPrincipal").value = "";
+            document.getElementById("NovoEnderecoIsPrincipal").checked = false;
         }
 
-        function RemoverTelefone(botao) {
+        function RemoverTelefone(botao) 
+        {
             botao.closest("tr").remove();
         }
 
-        function RemoverEndereco(botao) {
+        function RemoverEndereco(botao) 
+        {
             botao.closest("tr").remove();
         }
     </script>
