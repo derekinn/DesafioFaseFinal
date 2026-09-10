@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE2EEF43-3329-480B-AD87-E14886285065}|..\\DesafioWeb\\DesafioWeb.csproj|c:\\devenv\\cadastro de pessoas\\desafioweb\\views\\pessoa\\criartelefone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
@@ -28,12 +28,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{8615589D-F6E9-453B-8035-F2F2EAF78EF8}|..\\Desafio.Shared\\Desafio.Shared.csproj|c:\\devenv\\cadastro de pessoas\\desafio.shared\\models\\tipotelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8615589D-F6E9-453B-8035-F2F2EAF78EF8}|..\\Desafio.Shared\\Desafio.Shared.csproj|c:\\devenv\\cadastro de pessoas\\desafio.shared\\models\\uf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B825327-BE3C-E3E9-9DBC-4E1DA6DB1907}|..\\API\\API.csproj|c:\\devenv\\cadastro de pessoas\\api\\controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,17 +37,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Detalhes.cshtml",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Detalhes.cshtml",
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Detalhes.cshtml",
               "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Detalhes.cshtml",
               "RelativeToolTip": "..\\DesafioWeb\\Views\\Pessoa\\Detalhes.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAH4AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAIAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-10T15:46:05.016Z",
               "EditorCaption": ""
@@ -129,30 +123,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UF.cs",
-              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio.Shared\\Models\\UF.cs",
-              "RelativeDocumentMoniker": "..\\Desafio.Shared\\Models\\UF.cs",
-              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\Desafio.Shared\\Models\\UF.cs",
-              "RelativeToolTip": "..\\Desafio.Shared\\Models\\UF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-09T17:27:14.619Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AgendaController.cs",
-              "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\API\\Controllers\\AgendaController.cs",
-              "RelativeDocumentMoniker": "..\\API\\Controllers\\AgendaController.cs",
-              "ToolTip": "C:\\DevEnv\\Cadastro de Pessoas\\API\\Controllers\\AgendaController.cs",
-              "RelativeToolTip": "..\\API\\Controllers\\AgendaController.cs",
-              "ViewState": "AgIAAI8BAAAAAAAAAAAAADYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T16:16:50.742Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "PessoaController.cs",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Controllers\\PessoaController.cs",
@@ -166,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\DevEnv\\Cadastro de Pessoas\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\DesafioWeb\\Views\\Pessoa\\Index.cshtml",
