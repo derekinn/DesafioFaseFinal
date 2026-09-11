@@ -131,10 +131,12 @@
         function AtualizarPlaceholder() 
         {
 
-            if (SelectFiltro.value === "CPF") {
+            if (SelectFiltro.value === "CPF") 
+            {
                 InputBusca.placeholder = "Escreva o CPF";
             }
-            else {
+            else 
+            {
                 InputBusca.placeholder = "Escreva o nome";
             }
         }
@@ -181,9 +183,7 @@
 
                 event.preventDefault();
 
-                MostrarErro(
-                    "Preencha corretamente para realizar a pesquisa!"
-                );
+                MostrarErro("Preencha corretamente para realizar a pesquisa!");
 
                 return;
             }
@@ -196,9 +196,7 @@
 
                     event.preventDefault();
 
-                    MostrarErro(
-                        "Para pesquisar por CPF, informe somente números!"
-                    );
+                    MostrarErro("Para pesquisar por CPF, informe somente números!");
 
                     return;
                 }
@@ -208,9 +206,7 @@
 
                     event.preventDefault();
 
-                    MostrarErro(
-                        "O CPF deve possuir exatamente 11 dígitos!"
-                    );
+                    MostrarErro("O CPF deve possuir exatamente 11 dígitos!");
 
                     return;
                 }
@@ -224,9 +220,7 @@
 
                     event.preventDefault();
 
-                    MostrarErro(
-                        "Para pesquisar por nome, informe somente letras!"
-                    );
+                    MostrarErro("Para pesquisar por nome, informe somente letras!");
 
                     return;
                 }
@@ -236,9 +230,7 @@
 
                     event.preventDefault();
 
-                    MostrarErro(
-                        "O nome deve possuir pelo menos 2 caracteres!"
-                    );
+                    MostrarErro("O nome deve possuir pelo menos 2 caracteres!");
 
                     return;
                 }
@@ -254,7 +246,8 @@
 
         const conteudo = document.getElementById("conteudoDetalhes");
 
-        conteudo.innerHTML = `
+        conteudo.innerHTML = 
+            `
                 <div class="text-center">
                 </div>
             `;
@@ -271,9 +264,7 @@
 
             if (!response.ok) {
 
-                throw new Error(
-                    "Não foi possível carregar os detalhes."
-                );
+                throw new Error("Não foi possível carregar os detalhes.");
             }
 
             const html = await response.text();
@@ -283,7 +274,8 @@
         }
         catch (error) {
 
-            conteudo.innerHTML = `
+            conteudo.innerHTML = 
+                `
                     <div class="alert alert-warning">
                         ${error.message}
                     </div>
