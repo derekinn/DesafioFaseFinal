@@ -31,9 +31,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public IActionResult Listar(
-          [FromQuery] string? busca,
-          [FromQuery] string? tipoBusca)
+        public IActionResult Listar([FromQuery] string? busca, [FromQuery] string? tipoBusca)
         {
             try
             {
@@ -79,10 +77,7 @@ namespace API.Controllers
                     }
                 }
 
-                var pessoas = agendaService.BuscarPessoas(
-                    busca,
-                    tipoBusca
-                );
+                var pessoas = agendaService.BuscarPessoas(busca, tipoBusca);
 
                 return Ok(new
                 {
